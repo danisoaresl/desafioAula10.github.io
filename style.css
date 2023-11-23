@@ -1,26 +1,54 @@
+:root{
+    --cor-site: red;
+}
+
 
 html{
     font-family: sans-serif;
 }
 
 .maxwidth{
-    max-width: 90em;/*1440px / 16 = 90em*/
+    max-width: 9rem; 
+    
 }
 
 .header{
     text-align: center;
     margin: auto;
+    
 }
 
 .header_logo{
     width: 10em;
     height: 100%;
     margin: 1em;
+    margin-left: 2em;
+}
+
+.header_nav{
+    background-color: initial;
 }
 
 
-ul{
-    margin: 0;
+.header_nav ul{
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8em;
+    
+    
+}
+
+.header_nav li{
+}
+
+.header_nav a{
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+    padding: 1em;
 }
 
 .header nav ul{
@@ -29,6 +57,12 @@ ul{
     text-transform: uppercase;
     letter-spacing:  .2em;
     font-size:  .8em;
+    
+}
+
+ul{
+    margin: 0;
+    
 }
 
 .header nav a{
@@ -38,30 +72,12 @@ ul{
     padding: 1em;
 }
 
-.header_logo{
-    margin-left: 2em;
-}
-
-.header_nav ul{
-    margin-right: 2em;
-    font-size: .9em;
-}
-
-.header_nav li{
-    display: inline-block;
-}
-
-.header_nav a{
-    
-    border-radius: 5px;
-}
-
 .trailer{
-    background-color: grey;
+    background-color: #e4f2eb;
     padding-bottom: 1.5em;
     padding-left: 1em;
     padding-right: 1em;
-    line-height: 1.5;
+    line-height: 1.5em;
 }
 
 .trailer div{
@@ -72,13 +88,8 @@ ul{
 
 .trailer_title{
     margin-top: 0;
-    padding-top: .58em;
-    color:;
-}
-
-.trailer_title h1{
-    font-size: 2em;
-    margin-bottom: 1em;
+    padding-top: .5em;
+    color: var(--cor-site);
 }
 
 .trailer_title h1{
@@ -88,20 +99,61 @@ ul{
 
 .trailer_paragrafo{
     font-size: 1.1em;
+    margin-bottom: 2em;
 }
 
-.trailer_botao{
+.main_content{
     display: inline-block;
-    margin-top: 1em;
-    padding: 1em 2em;
-    border-radius: 8px;
-    text-decoration: none;
+    background-color: #e1d9d9;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.main_content div{
+    margin: auto;
+    padding: 1em;
+    width: 80%;
+}
+
+.main_content_title{
+    color: var(--cor-site);
+}
+
+.icon_img{
+    width: 5.5em;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.col{
+    flex: 1 0 auto;
+    width: 100%;
+}
+
+.col-12{
+    width: 100%;
+}
+
+footer{
+text-align: center;
+color: white;
+background: rgb(85, 85, 228);
+font-family: 'Playfair Display', serif;
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+padding: 10px;
 }
 
 @media screen and (min-width:48em){
-    .header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .col-6{
+        width: calc(50% - 2rem);
     }
-}
+ }
+
