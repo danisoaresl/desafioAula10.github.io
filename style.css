@@ -13,24 +13,28 @@ html{
 }
 
 .header{
-    text-align: center;
+    
+    text-align: left;
     margin: auto;
     
 }
 
 .header_logo{
+    display: inline-block;
     width: 10em;
     height: 100%;
     margin: 1em;
-    margin-left: 2em;
 }
 
 .header_nav{
+
+    float: right;
     background-color: initial;
 }
 
 
 .header_nav ul{
+    display: inline-flex;
     list-style-type: none;
     padding: 0;
     text-transform: uppercase;
@@ -41,6 +45,11 @@ html{
 }
 
 .header_nav li{
+    float: left;
+}
+
+.header_nav li:hover{
+    background-color: pink;
 }
 
 .header_nav a{
