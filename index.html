@@ -6,31 +6,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>:: Aula 10♥ ::</title>
         <link rel="stylesheet" href="style.css">
-        
+        <script>
+            function showVideo()
+            {
+                document.getElementById('trailer_video').style.display='block';
+                document.getElementById('btn_trailer').style.display='none';
+            }
+        </script>
     </head>
 
     <body>
         <header class="header maxWidth">
+ 
             <img src="/imagens/logo.png" alt="" class="header_logo">
             <div class="header_nav">
-            <nav class="header_nav">
-               
-                <ul>
-                    <li>
-                        <a href="#">Menu 01</a>
-                    </li>
-                    <li>
-                        <a href="#">Menu 02</a>
-                    </li>
-                    <li>
-                        <a href="#">Menu 03</a>
-                    </li>
-                    <li>
-                        <a href="#">Menu 04</a>
-                    </li>
-                </ul>     
-            </nav> 
-        </div>
+                    
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="">Avatar 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Avatar 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Avatar 3</a>
+                        </li>
+                        <li>
+                            <a href="#">Avatar 4</a>
+                        </li>
+                    </ul>     
+                </nav> 
+            
+            </div>
         </header>
          
         <main>
@@ -40,9 +48,13 @@
                             O filme
                     </h1>
                     <p class="trailer_paragrafo">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde aperiam ipsa cumque, ex laboriosam id obcaecati? Reprehenderit dolores quas hic veniam minus, culpa perspiciatis officia impedit et nostrum. Harum, aliquid.
+                        <b>Avatar</b> é um filme épico de ficção científica estadunidense de 2009, escrito e dirigido por <b>James Cameron</b>, e estrelado por Sam Worthington, Zoë Saldaña, Michelle Rodriguez, Sigourney Weaver e Stephen Lang. O filme, que foi produzido pela Lightstorm Entertainment e distribuído pela 20th Century Fox, tem seu enredo localizado no ano 2154 e é baseado em um conflito em Pandora, uma das luas de Polifemo, um dos três planetas gasosos fictícios que orbitam o sistema Alpha Centauri. Em Pandora, os colonizadores humanos e os Na'vi, nativos humanoides, entram em guerra pelos recursos do planeta e pela continuação da existência da espécie nativa. O título do filme refere-se aos corpos híbridos feitos a partir do ADN/DNA misturado de humanos e Na'vi , criados por um grupo de cientistas através de engenharia genética, para interagir com os nativos de Pandora.
+                    <br>
+                    <br>
+                           No futuro, precisamente no ano de 2.154, a humanidade realiza explorações espaciais com objetivo de coletar minerais para a Terra, que sofre de escassez de recursos. É em Pandora, uma lua localizada no sistema estelar Alpha Centauri, onde uma equipe de exploradores extrai um minério valioso chamado unobtanium. No entanto, uma civilização chamada Na'vi, com língua e cultura própria, habita esse local, além de manterem certo afastamento dos humanos.
                     </p>
-                    <iframe width="898" height="505" src="https://www.youtube.com/embed/G1fymUSI4cc" title="Avatar | Trailer Oficial Legendado | Versão Closed Caption" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <button id="btn_trailer" onclick="showVideo()">Trailer do filme</button>
+                    <iframe id="trailer_video" src="https://www.youtube.com/embed/G1fymUSI4cc" title="Avatar | Trailer Oficial Legendado | Versão Closed Caption" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
             </section>
 
@@ -50,33 +62,37 @@
                 <div class="maxWidth row">
                     <article class="col col-12 col-6">
                         <img src="imagens/imagem1.jpg" alt="" class="">   
-                        <h2 class="main_content_title">Título</h2>    
+                        <h2 class="main_content_title">Avatar 1</h2>    
                         <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque officia reiciendis, dicta magni enim et quam molestiae maxime numquam quis voluptates in quisquam. Consectetur nihil id ea laborum nesciunt magnam.     
+                            <b>Avatar</b>, atualmente disponível no Disney+, foi lançado em 18 de dezembro de 2009 e é a franquia de maior bilheteria no mundo, com arrecadação de cerca de US$ 2,8 bilhões.      
                         </p>
+                        <a href="https://play.google.com/store/movies/details/Avatar?id=ySP6OzS8tYU&hl=pt_BR&gl=US" target="_blank"><button class="btn">SAIBA MAIS</button></a>
                     </article>   
                     <article class="col col-12 col-6">
                         <img src="imagens/imagem2.jpg" alt="" class="">
-                        <h2 class="main_content_title">Título</h2>    
+                        <h2 class="main_content_title">Avatar 2 </h2>    
                         <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque officia reiciendis, dicta magni enim et quam molestiae maxime numquam quis voluptates in quisquam. Consectetur nihil id ea laborum nesciunt magnam.     
+                           <b>Avatar: O Caminho da Água</b> chegou aos cinemas 13 anos após o lançamento do primeiro filme de James Cameron.  
                         </p>
+                        <a href="https://www.google.com/search?q=avatar+2&oq=avatar+2+google+play&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIICAEQABgWGB4yCAgCEAAYFhgeMggIAxAAGBYYHjIICAQQABgWGB7SAQgzOTAwajBqN6gCALACAA&sourceid=chrome&ie=UTF-8&si=ALGXSlZmFKI2v4lCp4AGjKOmfAE18poZ_Lcv__MOWcznWcfZIpBZInwz3OBZY8uTU4D1BY-M0wWJViQFVuvD6sR3Eq2axuzF6BFiuR71mx_z9jLdpQgOrnMtWaH-YEGMVdcojRXt52rxMMVpV_6J1I87eLJh-2VyvzYTZvwFzE3RoPwVXILzk7xOXdYUcKl-thSAXAHMvixoN-dD4XNMMFUFZVYX3TW7VKdZystglMaVy0Tf-shgxuM98RPe51Ziva17XoKvIGKRuVWCURv8SHxsHYk4i6bfRzzGHb_EQqJz34896oYXceieBBu3op6LbGjhCHFmum3-FdgblUvh_vC6kiN8V5ZBIXm_Hhpu7iGziPzgeiISoCB8N0hhRsB0PVmzScKuRA-U1lmgAtHxjJAX6Ze5MMM_BWf8JcN22N_SshmV87G0n_peVJg4FX8ue1kOYlrsV33jxHLb3urvq6MhxBvkZlEMIg7UZbubmEmfEF0Vl-bQka1ZrhP_YA2tIX9EmjfEYPGtxjV1aq3Nxes_nWG-TZJTCqz8-62cRqi4LOc4AOuCd40fp4527gikSOXm9NBdTvHbO6sWJ-p46atB_HD54OgyfginN0wqs5X7ylDaLRMp_WdwnxCfeXX6zyYQK-t2SUvsQ-5NaQzWY4NWclZMkBbgRlxC7UgJ414YWfSblihAX9CvVtSXWR1yyUc8RFiuCIuDzMUfR-wHRErJJxqxOKkPNQ8S2nDtIsD71HzAyvDeyKxF_CNbytkUJ2EdQwUK65ruGj5lV-dJu-YtKZCRLAmVqTlJTDDuVJi2O65TF7fWNbC23wheeKvva0fqKp6kY27WRGhtrGWfJJV6NFyr2XUN44YlXXE8pIBgQpY30ewgSPYKYK_ErqvTrlJj6qDrx74nvZuoPfnlmYjmII31QwfrhVTZ2Y7LvzeBj4_j3s6DG3WYjUFiB33g7wWl0Lkz7P-Ac27XUBINZe7cB6QUxqUbK1MalQFSAZGlVN1tnUzEneWUPE6fXOp_tLEhUkJX7t8uFvTq-hr30CLdR0hpTawLlXhBpjp1FQ_WzBhB9RtAl1gRss9k5shBrHCMrkP6Uix-MkE_rbqxYj8luJaHf0xz8W0e1N_08ZONy79dDIIVr1gUGzTDd3IgBMA_OEBqMRZCoNbf_qYEecQpJkUgQ98sZ6KklwpB_FuwLu66OXtWNLSyO_GlDJjfnzenLUA-c7LtUTvP2zSSiSwK-rNxoW3yUXklqKWb70sLys3YuHa_j7mCrshBMTPG4s_vzwH8dQE8iHqICRO11rxCvZ4enTf_dvEqgPvEsM77xoHVpmF5i2I9lCfzJQjwpRv-ZDuN72Xjx1XAVRbsSiB416K33vn8prnn2i25HJhPbA7CD6Pyt2ouCu6srm25fB6SuII0QJDCHuT2PIYQ8XruP-TPBWH2-o5Gi10sZDINhiCb4D6KJmihoNOU6VssTZP8a8UsCc_6B22y4kTBAvp77UcEm2TsIceTAearz5siUpgLC3EL7iWmNnGhWoIocgNzRcRpywYQmPyb9tl5oBtQink6ceyrcnTpX6x-M0j9gzH5KWp5WFm6xYCsS7AKQIPFmCQhWlJG5EebXf4pihT9DUuXGExds08qoSCG0l86XpKT2_eqa0tICkFzp7kDKO2oQ6YHirvr2x0y5riVZrlyCpzOeszEJWSeB2STJZMFQP7ITJWrAKJXGNrM5fObxx4QYQVYp3tzczB7p5PoOJEz7-nLWYhASIyPFtDBmudUrZz-HBYNcG3tRsAstp0lksH57Ws37okNr6dQHGgkjUlgCMcVVUW-rl8IPTE-kVLKNk7l9PC1ueuABJyACH9PYaJlH0ik4pPJSLu3ZzAbbAV3gEmDitTaGQh708kLOrWwz8is3zdoYmfr9xzNoSHsiHUFRSPCva4BteUqtt1894h4xgbJu-C5AEFHqrD4Wr1QDmgyLRXg2ZInV9RdMm5W6MBti6tZ52kLGGb40XzTfKYx4_rAnYSBHb3Whg5Q2N72ykH_7k3QdKFRENf_mWLCqWYyJ5Y_E_LdCfN-u6ChwloL9aJ4x9ZdDl_uZJZ68yMxuBfnuC9Kfj90iir3uvnm-g_nsza1AMN8hGmFgjCbPNBP8QuxwEP3ZjRFKfDN7GYqwNm9SzB_JIENLxJ7QTGVQNDikbD7v7rSMvXUmfB6WF9S8GVHDLzZmrbpk8CFREub2BU_AoJ3Xb1OfPlYtR4XSqEVef_J2UCFqLH45mjdy-7GdZHV2rqt9NjjaotCRAjyxH5WGIwg_UzkVzki2CKXCUiUXW3yS_x9EfLOJEpDx-_2iOmJESHlTexJ2l4APh6qxNN4p_O4zWI4hfhHa6sYedME81rCh9uaW8IqeTlSLcKPSjVKLmvDkM0yP6dpSDJyC5apth-qVuFGmIQYW5X0wxQyQF5n5Ucpnrr4MbfWRG8hkn6wgG4d8txa8-rmcUKMToTKo-0GG-nFGuhoEAawqie82LasM4KMrncnpe_9SjHqZgnqkJLwvGsK8rul9PPKLUqitif84bAXqtWSBWSbIDBIImjOoNbHE6LR3PXwfW-2U8LAv-k2-uoA-W8dFqoM0jbgJIl1wM4%3D&ictx=1&ved=2ahUKEwiZ5qKcv92CAxXvK7kGHQJ6DxEQyNoBKAB6BAgLEAA#wptab=si:ALGXSlbH1rojk12Y8w-qyPr0HvmCpkx6T12lt3EFYeVWsAtzJMAHFW4gJ0D8-2pnVnLu8rcHsQoUDhNqPxCnVvw5AeFh1fkgWXl9kocuYnC21ai-g3ZVaVf0JWfB1wgCJWiRZD3R4Aqf" target="_blank"><button class="btn">SAIBA MAIS</button></a>
                     </article>
                 </div>    
                 <div class="maxWidth row">
                     <article class="col col-12 col-6">
                         <img src="imagens/imagem3.jpg" alt="" class="">   
-                        <h2 class="main_content_title">Título</h2>    
+                        <h2 class="main_content_title"><a>Avatar 3</a></h2>    
                         <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque officia reiciendis, dicta magni enim et quam molestiae maxime numquam quis voluptates in quisquam. Consectetur nihil id ea laborum nesciunt magnam.     
+                            <b>Avatar 3</b> está marcado para estrear em 20 de dezembro de 2024, ou seja, será uma espera de dois anos em relação ao segundo filme.
                         </p>
+                        <a href="https://br.ign.com/avatar-3/105732/feature/avatar-3-data-de-estreia-trailers-historia-elenco-tudo-sobre" target="_blank"><button class="btn">SAIBA MAIS</button></a>
                     </article>   
                     <article class="col col-12 col-6">
-                        <img src="imagens/imagem4" alt="" class="">
-                        <h2 class="main_content_title">Título</h2>    
+                        <img src="imagens/imagem4.jpg" alt="" class="">
+                        <h2 class="main_content_title">Avatar 4</h2>    
                         <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque officia reiciendis, dicta magni enim et quam molestiae maxime numquam quis voluptates in quisquam. Consectetur nihil id ea laborum nesciunt magnam.     
+                            <b>Avatar 4</b> Previsão para ser lançado em dezembro de 2029.
                         </p>
+                        <a href="https://cinepop.com.br/james-cameron-diz-que-roteiro-de-avatar-4-foi-aprovado-rapidamente-por-estudio-379723/" target="_blank"><button class="btn">SAIBA MAIS</button></a>
                     </article>
                 </div>    
               

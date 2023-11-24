@@ -5,15 +5,17 @@
 
 html{
     font-family: sans-serif;
+    
 }
 
 .maxwidth{
-    max-width: 9rem; 
+    max-width: 2rem; 
     
 }
 
 .header{
-    
+    display: block;
+    background-color:  #7BBCFF;
     text-align: left;
     margin: auto;
     
@@ -27,29 +29,27 @@ html{
 }
 
 .header_nav{
-
+    margin-right: 1rem;
+    display: flex;
     float: right;
     background-color: initial;
 }
 
 
-.header_nav ul{
-    display: inline-flex;
-    list-style-type: none;
-    padding: 0;
-    text-transform: uppercase;
-    letter-spacing: .2em;
-    font-size: .8em;
-    
-    
+.header_nav div{
+    display: flex;
+    float: right;
+    background-color: initial;
 }
+
 
 .header_nav li{
     float: left;
+    margin-top: 10px;
 }
 
 .header_nav li:hover{
-    background-color: pink;
+    background-color:  #e9f6f2;
 }
 
 .header_nav a{
@@ -82,7 +82,7 @@ ul{
 }
 
 .trailer{
-    background-color: #e4f2eb;
+    background-color:  #e9f6f2;
     padding-bottom: 1.5em;
     padding-left: 1em;
     padding-right: 1em;
@@ -113,7 +113,7 @@ ul{
 
 .main_content{
     display: inline-block;
-    background-color: #e1d9d9;
+    background-color: #e9f6f2;
     text-align: center;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -137,6 +137,7 @@ ul{
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    
 }
 
 .col{
@@ -148,21 +149,74 @@ ul{
     width: 100%;
 }
 
+.btn {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 15px 32px;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+.btn{
+    background-color: purple;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+      }
+
+
 footer{
-text-align: center;
-color: white;
-background: rgb(85, 85, 228);
-font-family: 'Playfair Display', serif;
-position: fixed;
-bottom: 0;
-left: 0;
-width: 100%;
-padding: 10px;
+    text-align: center; 
+    background-color: #7BBCFF;
+    padding: 10px;
+    font-style: italic;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
 }
+
+#btn_trailer {
+    display: none;
+    background-color: purple;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#trailer_video{
+    width: 600px;
+    height: 400px;
+}
+
+@media screen and (max-width:412px){
+    .header {
+        display: flex;
+    }
+    .header_nav {
+        margin-left: 4rem;
+    }
+    #trailer_video{
+        display: none;
+        width:300px;
+        height: 200px;
+    }
+    #btn_trailer{
+        display: inline-block;
+    }
+  }
 
 @media screen and (min-width:48em){
     .col-6{
         width: calc(50% - 2rem);
     }
- }
-
+ 
+}
